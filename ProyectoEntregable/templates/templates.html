@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Familia</title>
+</head>
+<body>
+    <!-- uso funcion for para extraer datos-->
+
+    <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Fecha de Nacimiento</th>
+        </tr>
+        
+        
+           {% for familiar in lista_familia %}
+        
+        <tr>    
+            <td>{{familiar.nombre}}</td>
+            <td>{{familiar.edad}}</td>
+            <td>{{familiar.fecha_nac}}</td> 
+            {% endfor %}
+
+
+        </tr>
+
+        <!--<tr>
+          <td>familiar.nombre</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+
+    {% for familiar in lista_familia %}
+    {{familiar.nombre}} 
+     {{familiar.edad}} 
+     {{familiar.fecha_nac}} 
+        {% endfor %}
+
+    
+
+
+    
+</body>
+</html>
